@@ -26,10 +26,10 @@ def generate_invoice_pdf(data, outdir="invoices"):
 
     # Header
     c.setFont("Helvetica-Bold", 18)
-    c.drawString(margin, height - margin, "PAL INDUSTRIES")
+    c.drawString(margin, height - margin, "R.K. INDUSTRIES")
     c.setFont("Helvetica", 9)
-    c.drawString(margin, height - margin - 14, "37A,CHAWALPATTI LANE,BELEGHATA,KOLKATA-700010")
-    c.drawString(margin, height - margin - 26, "palindustries@gmail.com")
+    c.drawString(margin, height - margin - 14, "40B,M.G.ROAD,BUDGE BUDGE,KOLKATA-700010")
+    c.drawString(margin, height - margin - 26, "r.k.industries@gmail.com")
 
     # Invoice meta (right)
     c.setFont("Helvetica-Bold", 14)
@@ -112,3 +112,4 @@ def generate_invoice_pdf(data, outdir="invoices"):
     c.showPage()
     c.save()
     return path, subtotal, tax_amount, total
+
