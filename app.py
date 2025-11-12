@@ -40,8 +40,8 @@ def index():
     <h2>Invoice Generator API</h2>
     <p>Use the form below to create an invoice (simple demo).</p>
     <form id="inv" onsubmit="submitForm(event)">
-      Customer name: <input id="customer_name" value="Swarup"><br>
-      Customer email: <input id="customer_email" value="swarup@gmail.com"><br>
+      Customer name: <input id="customer_name" value="SAMIR"><br>
+      Customer email: <input id="customer_email" value="samir@gmail.com"><br>
       Items JSON (example):<br>
       <textarea id="items" rows="6" cols="80">[{"description":"Widget A","qty":2,"unit_price":150.0},{"description":"Service B","qty":1,"unit_price":300.0}]</textarea><br>
       Tax (percent): <input id="tax" value="5"><br>
@@ -169,3 +169,4 @@ if __name__ == '__main__':
     # Ensure invoices folder exists
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     app.run(host="127.0.0.1", port=5000, debug=True)
+
